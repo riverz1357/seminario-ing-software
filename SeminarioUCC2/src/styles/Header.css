@@ -1,0 +1,258 @@
+:root {
+    --primary-bg: rgba(15, 17, 12, 0.95);
+    --accent-color: #22f36e;
+    --text-color: #ffffff;
+    --hover-bg: rgba(255, 255, 255, 0.1);
+    --transition-speed: 0.3s;
+    --menu-bg: rgba(23, 25, 20, 0.98);
+  }
+  
+  .header {
+      margin-top: 20px;
+      position: fixed;
+      display: flex;
+      width: 95%;
+      margin-left: 30px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-bg);
+      backdrop-filter: blur(8px);
+      color: var(--text-color);
+      padding: 15px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(34, 243, 110, 0.3);
+      animation: glow 2s infinite alternate ease-in-out;
+      z-index: 1000;
+      transition: all var(--transition-speed) ease;
+  }
+  
+  .logo {
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+      transition: transform var(--transition-speed) ease;
+      z-index: 1001;
+      margin-top: 10px;
+      margin-left: 5px;
+  }
+  
+  .logo:hover {
+      transform: scale(1.05);
+  }
+  
+  .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+  }
+  
+  .tab {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all var(--transition-speed) ease;
+      position: relative;
+      overflow: hidden;
+  }
+
+  .tab.active span{
+    font-family:"Poppins", sans-serif;
+  }
+  
+  .tab svg {
+      transition: transform var(--transition-speed) ease;
+  }
+  
+  .tab:hover svg {
+      transform: scale(1.1);
+  }
+  
+  .tab::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent-color);
+      transition: all var(--transition-speed) ease;
+      transform: translateX(-50%);
+  }
+  
+  .tab:hover::after {
+      width: 80%;
+  }
+  
+  .tab.active {
+      background-color: var(--hover-bg);
+      transform: translateY(-2px);
+  }
+  
+  .tab:hover {
+      background-color: var(--hover-bg);
+      transform: translateY(-2px);
+  }
+  
+  .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 1001;
+      padding: 0;
+      background: none;
+      border: none;
+  }
+  
+  .hamburger span {
+      width: 100%;
+      height: 3px;
+      background-color: var(--text-color);
+      border-radius: 3px;
+      transition: all var(--transition-speed) ease;
+  }
+  
+  @keyframes slideDown {
+      from {
+          opacity: 0;
+          transform: translateY(-10px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  @media (max-width: 1024px) {
+      .header {
+          padding: 12px 20px;
+          margin-left: 15px;
+          width: 95%;
+      }
+  
+      .hamburger {
+          display: flex;
+      }
+  
+      .nav {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: var(--menu-bg);
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          padding: 20px 0;
+          margin-top: 10px;
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(34, 243, 110, 0.2);
+          opacity: 0;
+          visibility: hidden;
+          transition: all var(--transition-speed) ease;
+          transform-origin: top center;
+      }
+  
+      .header.active .nav {
+          opacity: 1;
+          visibility: visible;
+          display: flex;
+          animation: slideDown 0.3s ease forwards;
+      }
+  
+      .header.active .hamburger span:first-child {
+          transform: translateY(9px) rotate(45deg);
+      }
+  
+      .header.active .hamburger span:nth-child(2) {
+          opacity: 0;
+      }
+  
+      .header.active .hamburger span:last-child {
+          transform: translateY(-9px) rotate(-45deg);
+      }
+  
+      .tab {
+          font-size: 1.1rem;
+          padding: 12px 25px;
+          width: 90%;
+          margin: 5px 0;
+          justify-content: flex-start;
+          border-radius: 12px;
+          background-color: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+  
+      .tab:hover {
+          background-color: rgba(255, 255, 255, 0.08);
+          border-color: rgba(255, 255, 255, 0.1);
+      }
+  
+      .tab.active {
+          background-color: rgba(34, 243, 110, 0.1);
+          border-color: rgba(34, 243, 110, 0.2);
+      }
+  
+      .tab svg {
+          margin-right: 15px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .header {
+          margin-left: 10px;
+          width: 93%;
+          padding: 10px 15px;
+      }
+  
+      .logo {
+          width: 40px;
+      }
+  
+      .nav {
+          padding: 15px 0;
+      }
+  
+      .tab {
+          font-size: 1rem;
+          padding: 10px 20px;
+      }
+  }
+  
+  @media (min-width: 481px) and (max-width: 1024px) {
+      .nav {
+          max-width: 400px;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 15px;
+      }
+  }
+  
+  .header::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-speed) ease;
+      z-index: -1;
+      border-radius: 16px;
+  }
+  
+  .header.active::before {
+      opacity: 1;
+      visibility: visible;
+  }
