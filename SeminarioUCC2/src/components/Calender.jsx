@@ -154,7 +154,7 @@ const Calendar = () => {
       },
       {
        id: 15,
-       title: 'Despegar Transformando la Experiencia del Viajero: Innovaciones en Software para el Turismo Digital',
+       title: 'Transformando la Experiencia del Viajero: Innovaciones en Software para el Turismo Digital',
        time: '3:00 PM - 4:00 PM',
        description: 'Angerson Lasso Desarrollador full Stack con sólida trayectoria en desarrollo de software, especialmente en tecnologías de Java',
         duration: '1h',
