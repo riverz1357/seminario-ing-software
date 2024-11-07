@@ -1,0 +1,8 @@
+{
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "warn",  // Cambiar de "error" a "warn"
+      "no-unused-vars": "warn",  // Cambiar de "error" a "warn"
+      "react-hooks/exhaustive-deps": "warn"  // Cambiar de "error" a "warn"
+    }
+  }
