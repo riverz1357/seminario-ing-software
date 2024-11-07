@@ -17,10 +17,10 @@ const Footer = () => {
                 <div class="social-box">
                     <b>Siguenos en nuestras redes sociales</b>
                     <div class="social-icons">
-                        <a href="#"><Facebook size={28} color="white"/></a>
-                        <a href="#"><Youtube size={28} color="white" /></a>
-                        <a href="#"><Instagram size={28} color="white" /></a>
-                        <a href="#"><X size={36} color="white" /></a>
+                    <a href="#" onClick={handleClick}><Facebook size={28} color="white"/></a>
+                    <a href="#" onClick={handleClick}><Youtube size={28} color="white" /></a>
+                    <a href="#" onClick={handleClick}><Instagram size={28} color="white" /></a>
+                    <a href="#" onClick={handleClick}><X size={36} color="white" /></a>
                     </div>
                 </div>
                     <div class="copyright">
