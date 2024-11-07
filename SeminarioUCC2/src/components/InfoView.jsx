@@ -7,7 +7,7 @@ import img4 from '../assets/imgponentes/jose.jpg';
 import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
 import img7 from '../assets/imgponentes/pedro.jpeg';
-import img8 from '../assets/imgponentes/Angerson.jpg';
+import img8 from '../assets/imgponentes/Angerson.jpeg';
 import '../styles/InfoView.css';
 
 const InfoView = () => {
