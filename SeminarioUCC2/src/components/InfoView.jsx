@@ -49,7 +49,7 @@ const InfoView = () => {
         id:4,
         image: img4,
         title: "Jose Francisco Ñañez",
-        shortDesc: "Estudiante del programa de Tecnología,Operaciones (CIO/CTO & COO) Grupo Santander – Colombia.",
+        shortDesc: "Estudiante del programa del MIT de CTO",
         fullContent: {
           paragraph1: "VP con más de 17 años de experiencia impulsando la transformación digital y la excelencia operativa en los sectores financiero y bancario. Experto en liderar iniciativas tecnológicas a gran escala, incluido el desarrollo y la implementación de plataformas digitales de vanguardia, marcos de ciberseguridad e infraestructura en la nube. Reducción de costos operativos, optimización de procesos e implementación de soluciones innovadoras que mejoran el desempeño comercial y la satisfacción del cliente. Liderazgo de equipos multidisciplinarios, para generar asociaciones estratégicas en entornos regulatorios complejos.",
           paragraph2: ""
