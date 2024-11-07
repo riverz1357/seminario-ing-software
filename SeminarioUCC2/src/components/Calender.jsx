@@ -18,7 +18,8 @@ const TournamentBanner = () => (
         <h1>League of Legends Torneo 2024</h1>
       </div>
       <div className="tournament-details">
-        <p className="tournament-date">Noviembre Viernes 15/Miercoles 20, 2024 2PM </p>
+        <p className="tournament-date">Noviembre Viernes 15 Inicio, 2024 2PM </p>
+        <p className="tournament-date">Noviembre Miercoles 20 Final y Premiacion, 2024 2PM </p>
         <p className="tournament-description">
           Responsable : Docentes Tiempo Completo
         </p>
