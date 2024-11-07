@@ -55,6 +55,10 @@ body {
     background-color:#0C0C0C;
 }
 
+.img-container{
+    backdrop-filter: blur(10px);
+}
+
 .background-image {
     position: absolute;
     top: 0;

@@ -6,7 +6,7 @@ import img3 from '../assets/imgponentes/jairo.jpg';
 import img4 from '../assets/imgponentes/jose.jpg';
 import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
-import img7 from '../assets/imgponentes/pedro.jpg';
+import img7 from '../assets/imgponentes/pedro.jpeg';
 import '../styles/InfoView.css';
 
 const InfoView = () => {
@@ -17,7 +17,7 @@ const InfoView = () => {
     {
       id: 1,
       image: img1,
-      title: "Natalia Barreto",
+      title: "Natalia Barrero",
       shortDesc: "Asesora de la dirección de Economía Digital y gerente del proyecto AvanzaTEC del Ministerio de Tecnologías de la Información y las Comunicaciones",
       fullContent: {
         paragraph1: "Natalia Barrero, es consultora, emprendedora tecnológica, mentora y speaker internacional experta en IA, ciencia de datos, transformación digital e impacto social. Graduada de la Maestría en Inteligencia Analítica (Analytics) de la Universidad de los Andes y profesional Bilingüe en Administración con doble titulación en Finanzas y Comercio Internacional. ",

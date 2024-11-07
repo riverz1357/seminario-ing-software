@@ -17,7 +17,6 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/confirm" element={<ConfirmAttendance />} />
         <Route 
           path="/dashboard" 
           element={
@@ -26,6 +25,7 @@ const App = () => {
             </PrivateRoute>
           } 
         >
+        <Route path="confirm-attendance" element={<PrivateRoute><ConfirmAttendance /></PrivateRoute>} />
           <Route index element={<Navigate to="/dashboard/stats" replace />} />
           <Route path="stats" element={<Stats />} />
           <Route path="users" element={<Users />} />

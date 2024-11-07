@@ -5,6 +5,7 @@ import { Facebook, Youtube, Instagram, X } from 'lucide-react';
 
 const Footer = () => {
     return(
+        <section id="calendar-section">
         <div class="footer">
             <div class="content2">
                 <div class="box">
@@ -32,6 +33,7 @@ const Footer = () => {
                     </div>
                 </div> 
         </div>
+        </section> 
     );
 };
 

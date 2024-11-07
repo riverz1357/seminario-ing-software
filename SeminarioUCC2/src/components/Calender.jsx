@@ -178,7 +178,7 @@ const Calendar = () => {
 
   return (
     <main>
-      <section>
+      <section id="calendar-section">
         <TournamentBanner />
         <div className="calendar-container">
           <div className="calendar-header">

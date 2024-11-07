@@ -3,6 +3,16 @@ import '../styles/Banner.css';
 import bannerImage from '../assets/logotipo.svg';
 
 export default function Banner() {
+    const handleCalendarClick = () => {
+        const calendarSection = document.getElementById('calendar-section');
+        if (calendarSection) {
+            calendarSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return (
         <main className="main">
             <section className="section banner banner-section fade-in">
@@ -15,7 +25,10 @@ export default function Banner() {
                         <p className="paragraph">
                             Únete a nosotros para explorar las últimas tendencias y tecnologías en el campo de la ingeniería de software.
                         </p>
-                        <button className="btn btn-darken btn-inline">
+                        <button 
+                            className="btn btn-darken btn-inline"
+                            onClick={handleCalendarClick}
+                        >
                             Calendario <i className="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>

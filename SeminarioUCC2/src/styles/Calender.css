@@ -350,7 +350,7 @@
   }
   
   .nav-button {
-    background: none;
+    background-color: rgba(34, 243, 110, 0.1);
     border: none;
     cursor: pointer;
     padding: 0.5rem;
