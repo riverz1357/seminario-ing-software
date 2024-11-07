@@ -10,21 +10,21 @@ const Footer = () => {
                 <div class="box">
                     <div class="box1">
                         <b>Enlaces</b>
-                        <a href="#">Inicio</a>
-                        <a href="#">Contacto</a>
-                    </div>
+                        <a href="/home">Inicio</a>
+                        <a href="/home">Contacto</a>
+                        </div>
                 </div>
                 <div class="social-box">
                     <b>Siguenos en nuestras redes sociales</b>
                     <div class="social-icons">
-                    <a href="#" ><Facebook size={28} color="white"/></a>
-                    <a href="#" ><Youtube size={28} color="white" /></a>
-                    <a href="#" ><Instagram size={28} color="white" /></a>
-                    <a href="#" ><X size={36} color="white" /></a>
+                        <a href="/home"><Facebook size={28} color="white"/></a>
+                        <a href="/home"><Youtube size={28} color="white" /></a>
+                        <a href="/home"><Instagram size={28} color="white" /></a>
+                        <a href="/home"><X size={36} color="white" /></a>
                     </div>
                 </div>
                     <div class="copyright">
-                        <p>2024 © Todos los derechos reservados</p>
+                        <p>2024 © Todos los derechos reservados INGENERIA DE SOFTWARE PASTO UCC</p>
                     </div>
                     <div class="autor">
                         <a href=""><img className="banner-image2" src={bannerImage2} alt="banner" /></a>

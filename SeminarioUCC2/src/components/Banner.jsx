@@ -9,15 +9,14 @@ export default function Banner() {
                 <div className="container banner-column">
                     <div className="banner-inner">
                         <h1 className="heading-xl">
-                            <span className="heading-line">Seminario Nacional</span>
-                            <span className="heading-line">de Ingeniería de Software</span>
+                            <span className="heading-line">Primer Seminario<br/> Nacional</span>
+                            <span className="heading-line">Ingeniería de Software</span>
                         </h1>
                         <p className="paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Únete a nosotros para explorar las últimas tendencias y tecnologías en el campo de la ingeniería de software.
                         </p>
                         <button className="btn btn-darken btn-inline">
-                            Button <i className="bx bx-right-arrow-alt"></i>
+                            Calendario <i className="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>
                     <img className="banner-image" src={bannerImage} alt="banner" />
