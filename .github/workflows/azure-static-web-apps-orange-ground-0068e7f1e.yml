@@ -23,6 +23,9 @@ jobs:
           submodules: true
           lfs: false
 
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
