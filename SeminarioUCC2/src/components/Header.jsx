@@ -9,8 +9,14 @@ export default function Header() {
     const [activeTab, setActiveTab] = useState('home');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     const scrollToFooter = () => {
-        // Intenta encontrar primero la sección con id="footer"
         const footerSection = document.getElementById('footer');
         if (footerSection) {
             footerSection.scrollIntoView({ 
@@ -18,7 +24,6 @@ export default function Header() {
                 block: 'start'
             });
         } else {
-            // Si no encuentra la sección, hace scroll hasta el final de la página
             window.scrollTo({
                 top: document.documentElement.scrollHeight,
                 behavior: 'smooth'
@@ -29,7 +34,12 @@ export default function Header() {
     const handleTabClick = (tab) => {
         if (tab === 'home') {
             setActiveTab(tab);
-            navigate(`/${tab}`);
+            if (window.location.pathname !== '/home' && window.location.pathname !== '/') {
+                navigate('/home');
+                setTimeout(scrollToTop, 100);
+            } else {
+                scrollToTop();
+            }
         } else if (tab === 'calendar') {
             setActiveTab(tab);
             if (window.location.pathname !== '/home' && window.location.pathname !== '/') {

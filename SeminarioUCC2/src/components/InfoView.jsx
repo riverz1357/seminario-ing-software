@@ -7,6 +7,7 @@ import img4 from '../assets/imgponentes/jose.jpg';
 import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
 import img7 from '../assets/imgponentes/pedro.jpeg';
+import img8 from '../assets/imgponentes/Angerson.jpg';
 import '../styles/InfoView.css';
 
 const InfoView = () => {
@@ -28,7 +29,7 @@ const InfoView = () => {
         id:2,
         image: img2,
         title: "Juan David Campiño",
-        shortDesc: "Estudiante 8 semestre ingeniería de software Ingeniero de software Mercado Libre",
+        shortDesc: "Estudiante de Octavo semestre ingeniería de software UCC campus Pasto, Ingeniero de software Mercado Libre",
         fullContent: {
           paragraph1: "Juan David es un apasionado por la tecnología y el desarrollo de software. Durante su tiempo en la universidad, ha trabajado en varios proyectos innovadores y ha demostrado habilidades excepcionales en programación y resolución de problemas.",
           paragraph2: ""
@@ -58,7 +59,7 @@ const InfoView = () => {
         id:5,
         image: img5,
         title: "Julian Reyes",
-        shortDesc: "Estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia",
+        shortDesc: "Ingeniero Industrial e Ingeniero Electrónico, con maestrías en Ingeniería Industrial (Universidad de los Andes) e Inteligencia Artificial (Universidad Politécnica de Madrid). ",
         fullContent: {
           paragraph1: "Ingeniero Industrial e Ingeniero Electrónico, con maestrías en Ingeniería Industrial (Universidad de los Andes) e Inteligencia Artificial (Universidad Politécnica de Madrid). Cuenta con más de 12 años de experiencia en el diseño e implementación de soluciones innovadoras en ciencia de datos, inteligencia artificial y optimización, ha trabajado en sectores como seguridad, defensa, banca, retail, logística, educación y consultoría",
           paragraph2: "Es Líder de Data & Analytics y Líder del Centro de Conocimiento de Ciencia de Datos en Pragma S.A., y profesor universitario con más de 8 años de experiencia, impartiendo clases en instituciones como Universidad de los Andes, Emeritus para el MiT xPRO, Pontificia Universidad Javeriana y Universidad Autónoma de Bucaramanga."
@@ -78,11 +79,22 @@ const InfoView = () => {
           id:7,
           image: img7,
           title: "Pedro Camargo",
-          shortDesc: "Gerente de Transformación y Desarrollo en Nequi",
+          shortDesc: "Gerente de Transformación y Desarrollo en Nequi, Ingeniero de Sistemas y Gerente de Transformación y Desarrollo en Nequi",
           fullContent: {
               paragraph1: "Ingeniero de Sistemas y Gerente de Transformación y Desarrollo en Nequi, cuenta con más de 15 años de experiencia en el sector financiero y tecnológico. Ha sido fundamental en la implementación de iniciativas clave en innovación y banca digital, contribuyendo significativamente al crecimiento de Nequi como referente en la industria.",
               paragraph2: ""
           }
+      },
+      {
+          id: 8,
+          image: img8,
+          title: "Angerson Lasso.",
+          shortDesc: "Desarrollador full Stack con sólida trayectoria en desarrollo de software, especialmente en tecnologías de Java",
+          fullContent: {
+              paragraph1: "se caracteriza por su capacidad en el desarrollo de software en diversas capas de la arquitectura, con una fuerte base en Java y tecnologías complementarias como Spring Boot y Angular. Su experiencia en pruebas unitarias y en roles de coordinación sugiere no solo habilidades técnicas, sino también competencias en liderazgo y gestión de equipos. Su trayectoria indica un compromiso constante con la calidad del software y un enfoque en el mejoramiento continuo.",
+              paragraph2: ""
+          }
+
       }
     ];
 

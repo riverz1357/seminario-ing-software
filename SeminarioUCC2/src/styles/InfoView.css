@@ -69,21 +69,24 @@
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   scroll-snap-align: center;
-  width: 18rem; /* 288px */
+  width: 18rem;
   transform-origin: center;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  height: max-content;
 }
 
 .card.expanded {
-  width: 24rem; /* 384px */
+  width: 24rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-0.5rem);
+  height: max-content;
 }
 
 .card:hover:not(.expanded) {
   transform: translateY(-0.25rem) scale(1.02);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  height: max-content;
 }
 
 .card-content {

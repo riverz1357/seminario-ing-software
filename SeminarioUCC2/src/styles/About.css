@@ -55,10 +55,6 @@ body {
     background-color:#0C0C0C;
 }
 
-.img-container{
-    backdrop-filter: blur(10px);
-}
-
 .background-image {
     position: absolute;
     top: 0;
@@ -68,6 +64,68 @@ body {
     object-fit: cover;
     animation: slideInFromLeft 1s ease-out;
     z-index: 0;
+}
+
+.text-container {
+    animation: fadeIn 0.8s ease-out 0.7s both;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+.section-title h2 {
+    color: #2d2d2d;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #545454;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover h2::after {
+    width: 100%;
+}
+
+.text {
+    font-size: clamp(13px, 2vw, 16px);
+    color: #545454;
+    line-height: 1.8;
+    text-align: justify;
+    margin-left: 2rem;
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid #f0f0f0;
+    font-family: "Poppins", sans-serif;
+}
+
+.text:hover {
+    border-left-color: #545454;
+    transition: border-left-color 0.3s ease;
+}
+
+.skills {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.skills span {
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .inner-container {

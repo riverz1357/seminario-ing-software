@@ -19,8 +19,8 @@ export default function Banner() {
                 <div className="container banner-column">
                     <div className="banner-inner">
                         <h1 className="heading-xl">
-                            <span className="heading-line">Primer Seminario<br/> Nacional</span>
-                            <span className="heading-line">Ingeniería de Software</span>
+                            <span className="heading-line">Primer Seminario Nacional <br /> Ingeniería de Software</span>
+                            <span className="heading-line"></span>
                         </h1>
                         <p className="paragraph">
                             Únete a nosotros para explorar las últimas tendencias y tecnologías en el campo de la ingeniería de software.

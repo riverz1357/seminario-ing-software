@@ -1,39 +1,44 @@
 import React from 'react';
 import '../styles/Footer.css';
 import bannerImage2 from '../assets/logotipo.svg';
-import { Facebook, Youtube, Instagram, X } from 'lucide-react';
 
 const Footer = () => {
     return(
         <section id="calendar-section">
-        <div class="footer">
-            <div class="content2">
-                <div class="box">
-                    <div class="box1">
+        <div className="footer">
+            <div className="content2">
+                <div className="box">
+                    <div className="box1">
                         <b>Enlaces</b>
-                        <a href="/home">Inicio</a>
-                        <a href="/home">Contacto</a>
-                        </div>
-                </div>
-                <div class="social-box">
-                    <b>Siguenos en nuestras redes sociales</b>
-                    <div class="social-icons">
-                        <a href="/home"><Facebook size={28} color="white"/></a>
-                        <a href="/home"><Youtube size={28} color="white" /></a>
-                        <a href="/home"><Instagram size={28} color="white" /></a>
-                        <a href="/home"><X size={36} color="white" /></a>
+                        <a href="/">Inicio</a>
                     </div>
                 </div>
-                    <div class="copyright">
-                        <p>2024 © Todos los derechos reservados INGENERIA DE SOFTWARE PASTO UCC</p>
+                <div className="contact-box">
+                    <b>Contacto</b>
+                    <p>Luis Carlos Revelo Tovar</p>
+                    <p>Decano Facultad Ingeniería de Software</p>
+                    <p>Email: luis.revelot@ucc.edu.co</p>
+                </div>
+                <div className="social-box">
+                    <b>Universidad Cooperativa de Colombia</b>
+                    <div className="social-icons">
+                        <a href="https://www.ucc.edu.co" target="_blank" rel="noopener noreferrer">
+                            <img className="banner-image2" src={bannerImage2} alt="banner" />
+                        </a>
                     </div>
-                    <div class="autor">
-                        <a href=""><img className="banner-image2" src={bannerImage2} alt="banner" /></a>
-                        <p>Desarrollado por: River Bonilla <br /> Tomas Benavides</p>
-                    </div>
-                </div> 
+                </div>
+                <div className="copyright">
+                    <p>2024 © Todos los derechos reservados INGENERIA DE SOFTWARE PASTO UCC</p>
+                </div>
+                <div className="autor">
+                    <a href="https://www.ucc.edu.co" target="_blank" rel="noopener noreferrer">
+                        <img className="banner-image2" src={bannerImage2} alt="banner" />
+                    </a>
+                    <p>Desarrollado por Estudiantes de Ingeneria de Software:<br/> River Bonilla <br /> Tomas Benavides</p>
+                </div>
+            </div> 
         </div>
-        </section> 
+        </section>
     );
 };
 
