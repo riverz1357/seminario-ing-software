@@ -4,7 +4,7 @@ import img1 from '../assets/imgponentes/natalia.jpg';
 import img2 from '../assets/imgponentes/campino.jpg';
 import img3 from '../assets/imgponentes/jairo.jpg';
 import img4 from '../assets/imgponentes/jose.jpg';
-import img5 from '../assets/imgponentes/Julian.JPG';
+import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
 import img7 from '../assets/imgponentes/pedro.jpeg';
 import img8 from '../assets/imgponentes/Angerson.jpg';
