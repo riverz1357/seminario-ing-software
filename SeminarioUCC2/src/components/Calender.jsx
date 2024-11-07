@@ -98,9 +98,9 @@ const Calendar = () => {
     "19": [
       {
         id: 8,
-        title: 'Grupo Santander – Colombia."Impulsando la Innovación Financiera en Colombia: Open Banking y Open Finance como Motores del Cambio en la Ingeniería de Software"',
+        title: '"Impulsando la Innovación Financiera en Colombia: Open Banking y Open Finance como Motores del Cambio en la Ingeniería de Software"',
         time: '8:00 AM - 9:00 AM',
-        description: 'JOSE FRANCISCO ÑAÑEZ CIO Actual Vicepresidente de Tecnología,Operaciones (CIO/CTO & COO) Grupo Santander – Colombia.',
+        description: 'Jose Francisco Ñañez CIO Estudiante del programa del MIT de CTO',
         duration: '1h',
         place: 'Auditorio principal Camara de Comercio'
       },
