@@ -7,7 +7,7 @@ import img4 from '../assets/imgponentes/jose.jpg';
 import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
 import img7 from '../assets/imgponentes/pedro.jpeg';
-import img8 from '../assets/imgponentes/Angerson.jpeg';
+import img8 from '../assets/imgponentes/Angerson.jpg';
 import '../styles/InfoView.css';
 
 const InfoView = () => {
@@ -88,7 +88,7 @@ const InfoView = () => {
       {
           id: 8,
           image: img8,
-          title: "Angerson Lasso.",
+          title: "Angerson Lazo.",
           shortDesc: "Desarrollador full Stack con sólida trayectoria en desarrollo de software, especialmente en tecnologías de Java",
           fullContent: {
               paragraph1: "se caracteriza por su capacidad en el desarrollo de software en diversas capas de la arquitectura, con una fuerte base en Java y tecnologías complementarias como Spring Boot y Angular. Su experiencia en pruebas unitarias y en roles de coordinación sugiere no solo habilidades técnicas, sino también competencias en liderazgo y gestión de equipos. Su trayectoria indica un compromiso constante con la calidad del software y un enfoque en el mejoramiento continuo.",

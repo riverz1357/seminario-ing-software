@@ -186,12 +186,10 @@ const Calendar = () => {
     ]
   };
 
-  const previousDay = () => {
-    if (selectedDate === "19") setSelectedDate("18");
-  };
-
-  const nextDay = () => {
-    if (selectedDate === "18") setSelectedDate("19");
+  const changeDay = (day) => {
+    if (day === "18" || day === "19") {
+      setSelectedDate(day);
+    }
   };
 
   return (
@@ -203,7 +201,7 @@ const Calendar = () => {
             <CalendarIcon className="calendar-icon" />
             <div className="date-navigation">
               <button 
-                onClick={previousDay}
+                onClick={() => changeDay("18")}
                 className="nav-button"
                 disabled={selectedDate === "18"}
               >
@@ -211,7 +209,7 @@ const Calendar = () => {
               </button>
               <h2>Cronograma - Noviembre {selectedDate}</h2>
               <button 
-                onClick={nextDay}
+                onClick={() => changeDay("19")}
                 className="nav-button"
                 disabled={selectedDate === "19"}
               >
