@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - BackendSeminario
+name: Build and deploy NestJS app to Azure Web App - BackendSeminario
 
 on:
   push:
@@ -21,14 +21,17 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./backend
+
+      - name: Build NestJS app
+        run: npm run build
+        working-directory: ./backend
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: zip -r release.zip ./backend/dist
+        shell: bash
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -52,14 +55,14 @@ jobs:
           name: node-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip
-      
+        run: unzip release.zip -d backend-deployment
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C360D446B21340C3A4386B47075C2D01 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3A4F2C64E6524B5D8734167BBF9D56A2 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3EC2330F02D549E680E1C0FB8725E2A8 }}
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -67,5 +70,4 @@ jobs:
         with:
           app-name: 'BackendSeminario'
           slot-name: 'Production'
-          package: .
-          
+          package: ./backend-deployment/backend/dist
