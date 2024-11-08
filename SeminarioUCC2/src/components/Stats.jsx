@@ -11,7 +11,7 @@ const Stats = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const apiUrl = process.env.URL_BACKEND || 'http://localhost:3001';
+        const apiUrl = process.env.REACT_APP_URL_BACKEND || 'http://localhost:3001';
         const response = await fetch(`${apiUrl}/stats`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`

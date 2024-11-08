@@ -1,18 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4bf6c38.css",
-    "main.js": "/static/js/main.46b3d7cc.js",
+    "main.css": "/static/css/main.17e74c6a.css",
+    "main.js": "/static/js/main.fe05c7ae.js",
     "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
-    "static/media/background.png": "/static/media/background.6cf9b4e96f700c6d5e92.png",
+    "static/media/background.png": "/static/media/background.bf025f830e72309d3944.png",
+    "static/media/campino.jpg": "/static/media/campino.4ffe8432d14a3b17187d.jpg",
+    "static/media/jose.jpg": "/static/media/jose.2406fe6c1a2ab04ec6bd.jpg",
     "static/media/ucc.png": "/static/media/ucc.44916ecb1da245a4ce4b.png",
+    "static/media/pedro.jpeg": "/static/media/pedro.356baef198d8d2abc09d.jpeg",
+    "static/media/Julian.jpg": "/static/media/Julian.c9175886f8a5a5150202.jpg",
+    "static/media/jairo.jpg": "/static/media/jairo.258d48e6f6ff21c8c7cc.jpg",
+    "static/media/natalia.jpg": "/static/media/natalia.a2653103ce82c5f2397a.jpg",
+    "static/media/Angerson.jpg": "/static/media/Angerson.201da2b7abfb3becb64e.jpg",
+    "static/media/mariafernanda.jpg": "/static/media/mariafernanda.c0f6a1be795c6af47f1b.jpg",
     "static/media/logotipo.svg": "/static/media/logotipo.aa05e33ef4a40d98d86fe6f9c73cf0ab.svg",
+    "static/media/lol.svg": "/static/media/lol.f199baddbe61b9fe7b64242cdafc08b1.svg",
     "index.html": "/index.html",
-    "main.e4bf6c38.css.map": "/static/css/main.e4bf6c38.css.map",
-    "main.46b3d7cc.js.map": "/static/js/main.46b3d7cc.js.map",
+    "main.17e74c6a.css.map": "/static/css/main.17e74c6a.css.map",
+    "main.fe05c7ae.js.map": "/static/js/main.fe05c7ae.js.map",
     "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4bf6c38.css",
-    "static/js/main.46b3d7cc.js"
+    "static/css/main.17e74c6a.css",
+    "static/js/main.fe05c7ae.js"
   ]
 }

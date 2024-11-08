@@ -7,7 +7,7 @@ const SendConfirmationCode = ({ userId }) => {
     event.preventDefault();
 
     try {
-      const apiUrl = process.env.URL_BACKEND || 'http://localhost:3001';
+      const apiUrl = process.env.REACT_APP_URL_BACKEND || 'http://localhost:3001';
       const response = await fetch(`${apiUrl}/users/${userId}/send-confirmation-code`, {
         method: 'POST',
         headers: {
