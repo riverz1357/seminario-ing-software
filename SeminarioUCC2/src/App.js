@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -11,30 +11,45 @@ import Stats from './components/Stats';
 import Users from './components/Users';
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <Router>
-      <Header/>
+    <>
+      
+      {location.pathname === '/home' && <Header />}
       <Routes>
+        
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route 
-          path="/dashboard" 
+        <Route path="/" element={<Navigate to="/home" replace />} />
+
+        
+        <Route
+          path="/confirm-attendance"
+          element={
+            <PrivateRoute>
+              <ConfirmAttendance />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/dashboard"
           element={
             <PrivateRoute>
               <Dashboard />
             </PrivateRoute>
-          } 
+          }
         >
-        <Route path="confirm-attendance" element={<PrivateRoute><ConfirmAttendance /></PrivateRoute>} />
-          <Route index element={<Navigate to="/dashboard/stats" replace />} />
+          <Route index element={<Navigate to="/dashboard/users" replace />} />
           <Route path="stats" element={<Stats />} />
           <Route path="users" element={<Users />} />
           <Route path="import" element={<ImportUsers />} />
         </Route>
+
+        
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
-        <Route path="/" element={<Navigate to="/home" replace />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 

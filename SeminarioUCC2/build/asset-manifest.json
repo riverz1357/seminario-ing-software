@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17e74c6a.css",
-    "main.js": "/static/js/main.fe05c7ae.js",
+    "main.css": "/static/css/main.b946da3d.css",
+    "main.js": "/static/js/main.cb0664f6.js",
     "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
     "static/media/background.png": "/static/media/background.bf025f830e72309d3944.png",
     "static/media/campino.jpg": "/static/media/campino.4ffe8432d14a3b17187d.jpg",
@@ -16,12 +16,12 @@
     "static/media/logotipo.svg": "/static/media/logotipo.aa05e33ef4a40d98d86fe6f9c73cf0ab.svg",
     "static/media/lol.svg": "/static/media/lol.f199baddbe61b9fe7b64242cdafc08b1.svg",
     "index.html": "/index.html",
-    "main.17e74c6a.css.map": "/static/css/main.17e74c6a.css.map",
-    "main.fe05c7ae.js.map": "/static/js/main.fe05c7ae.js.map",
+    "main.b946da3d.css.map": "/static/css/main.b946da3d.css.map",
+    "main.cb0664f6.js.map": "/static/js/main.cb0664f6.js.map",
     "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17e74c6a.css",
-    "static/js/main.fe05c7ae.js"
+    "static/css/main.b946da3d.css",
+    "static/js/main.cb0664f6.js"
   ]
 }

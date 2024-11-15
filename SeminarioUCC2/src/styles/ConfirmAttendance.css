@@ -1,0 +1,90 @@
+.confirm-attendance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1rem;
+}
+
+.confirm-attendance-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.confirm-attendance-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.confirm-attendance-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.confirm-attendance-message {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.confirm-attendance-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.confirm-attendance-instruction {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.confirm-attendance-button {
+  padding: 0.75rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-attendance-button:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+}
+
+.confirm-attendance-button:active {
+  transform: translateY(1px);
+}
+
+.confirm-attendance-button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.confirm-attendance-loading {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+@media (min-width: 640px) {
+  .confirm-attendance-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .confirm-attendance-button {
+    flex: 1;
+  }
+}

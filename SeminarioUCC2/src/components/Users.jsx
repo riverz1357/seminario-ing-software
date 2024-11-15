@@ -37,29 +37,29 @@ const Users = () => {
     fetchUsers();
   }, []);
 
-  const sendConfirmationCodes = async () => {
-    for (const userId of selectedUsers) {
-      try {
-        const response = await fetch(`http://localhost:3001/users/${userId}/send-confirmation-code`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${localStorage.getItem('token')}`
-          },
-        });
-  
-        if (!response.ok) {
-          const errorData = await response.json();
-          console.error(`Error sending code to user ${userId}:`, errorData);
-        }
-      } catch (error) {
-        console.error('Error sending confirmation code:', error);
-      }
-    }
-  
-
-    setSelectedUsers([]);
-  };
+//  const sendConfirmationCodes = async () => {
+//    for (const userId of selectedUsers) {
+//      try {
+//        const response = await fetch(`http://localhost:3001/users/${userId}/send-confirmation-code`, {
+//          method: 'POST',
+//          headers: {
+//            'Content-Type': 'application/json',
+//            'Authorization': `Bearer ${localStorage.getItem('token')}`
+//          },
+//        });
+//  
+//        if (!response.ok) {
+//          const errorData = await response.json();
+//          console.error(`Error sending code to user ${userId}:`, errorData);
+//        }
+//      } catch (error) {
+//        console.error('Error sending confirmation code:', error);
+//      }
+//    }
+//  
+//
+//    setSelectedUsers([]);
+//  };
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
