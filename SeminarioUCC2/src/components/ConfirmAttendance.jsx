@@ -10,7 +10,7 @@ const ConfirmAttendance = () => {
 
   const confirmAttendance = async (attendanceNum) => {
     setIsLoading(true);
-    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+    const apiUrl = process.env.REACT_APP_API_URL_BACKEND || 'http://localhost:3001';
     try {
       const response = await fetch(`${apiUrl}/users/confirm-attendance?idcode=${idcode}&attendanceNumber=${attendanceNum}`, {
         method: 'GET',
