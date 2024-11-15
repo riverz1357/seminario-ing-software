@@ -103,7 +103,8 @@ const Users = () => {
   const sendQRCodes = async () => {
     for (const userId of selectedUsers) {
         try {
-          const response = await fetch(`http://localhost:3001/users/${userId}/send-confirmation-code`, {
+          const apiUrl = process.env.REACT_APP_URL_BACKEND || 'http://localhost:3001';
+          const response = await fetch(`${apiUrl}/users/${userId}/send-confirmation-code`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
