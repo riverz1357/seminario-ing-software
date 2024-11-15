@@ -3,7 +3,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import img1 from '../assets/imgponentes/natalia.jpg';
 import img2 from '../assets/imgponentes/campino.jpg';
 import img3 from '../assets/imgponentes/jairo.jpg';
-import img4 from '../assets/imgponentes/jose.jpg';
 import img5 from '../assets/imgponentes/Julian.jpg';
 import img6 from '../assets/imgponentes/mariafernanda.jpg';
 import img7 from '../assets/imgponentes/pedro.jpeg';
@@ -42,16 +41,6 @@ const InfoView = () => {
         shortDesc: "Doctor en Ingeniería de Sistemas e Informática por la Universidad de Zaragoza (España)",
         fullContent: {
           paragraph1: "Doctor en Ingeniería de Sistemas e Informática por la Universidad de Zaragoza (España), con una Maestría en Gestión y Desarrollo de Proyectos de Ingeniería de Software y una Especialización en Ingeniería de Software, ambas de la Universidad Autónoma de Manizales. Ingeniero en Computación por la misma universidad. Profesor Asistente en la Universidad de Caldas, adscrito al Departamento de Sistemas e Informática, y miembro investigador de los grupos GITIR e Inteligencia Artificial de la institución. Posee amplia experiencia en arquitectura y desarrollo de software e inteligencia artificial, áreas en las que ha trabajado y liderado proyectos de impacto académico y profesional.",
-          paragraph2: ""
-        },
-    },
-    {
-        id:4,
-        image: img4,
-        title: "Jose Francisco Ñañez",
-        shortDesc: "Estudiante del programa del MIT de CTO, VP con más de 17 años de experiencia impulsando la transformación digital",
-        fullContent: {
-          paragraph1: "VP con más de 17 años de experiencia impulsando la transformación digital y la excelencia operativa en los sectores financiero y bancario. Experto en liderar iniciativas tecnológicas a gran escala, incluido el desarrollo y la implementación de plataformas digitales de vanguardia, marcos de ciberseguridad e infraestructura en la nube. Reducción de costos operativos, optimización de procesos e implementación de soluciones innovadoras que mejoran el desempeño comercial y la satisfacción del cliente. Liderazgo de equipos multidisciplinarios, para generar asociaciones estratégicas en entornos regulatorios complejos.",
           paragraph2: ""
         },
     },
