@@ -98,9 +98,9 @@ const Calendar = () => {
     "19": [
       {
         id: 8,
-        title: '"Impulsando la Innovación Financiera en Colombia: Open Banking y Open Finance como Motores del Cambio en la Ingeniería de Software"',
+        title: '""',
         time: '8:00 AM - 9:00 AM',
-        description: 'Jose Francisco Ñañez CIO Estudiante del programa del MIT de CTO',
+        description: '',
         duration: '1h',
         place: 'Auditorio principal Camara de Comercio'
       },
