@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import img9 from '../assets/imgponentes/random.jpg';
 import img1 from '../assets/imgponentes/natalia.jpg';
 import img2 from '../assets/imgponentes/campino.jpg';
 import img3 from '../assets/imgponentes/jairo.jpg';
@@ -14,6 +15,16 @@ const InfoView = () => {
   const carouselRef = useRef(null);
 
   const cardsData = [
+    {
+        id: 8,
+        image: img9,
+        title: "Gelber Moran Silva",
+        shortDesc: "Profesional en ingeniería de sistemas y candidato a magíster en transformación digital, emprendedor con una amplia experiencia en la creación y gestión de emprendimientos digitales, sociales y de arte digital.",
+        fullContent: {
+            paragraph1: "Ha participado en la formulación de proyectos para convocatorias nacionales e internacionales, es asesor en implementación tecnológica y lidera equipos de desarrollo de tecnologías, transformación digital, comunicación y marketing digital. Además, se ha desempeñado como conferencista, docente e investigador en diversas áreas relacionadas con la innovación, el emprendimiento, el desarrollo tecnológico y la apropiación social de la ciencia, la tecnología y la innovación.",
+            paragraph2: "Actualmente, ocupa el cargo de director ejecutivo de ParqueSoft Nariño, presidente y clúster manager de ConexSurTIC de Nariño, así como coordinador de la Red Regional de Emprendimiento de Nariño."
+        }
+    },
     {
       id: 1,
       image: img1,
