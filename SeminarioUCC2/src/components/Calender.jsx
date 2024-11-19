@@ -98,26 +98,34 @@ const Calendar = () => {
     "19": [
       {
         id: 8,
-        title: '""',
-        time: '8:00 AM - 9:00 AM',
-        description: '',
+        title: 'Trabajo en clúster',
+        time: '8:30 AM - 9:30 AM',
+        description: ', dinámica de fortalecimiento de los ecosistemas de innovación digital regional y proyectos de fortalecimiento de iniciativas TIC en Nariño.',
         duration: '1h',
         place: 'Auditorio principal Camara de Comercio'
       },
       {
         id: 9,
-        title: '“Nequi, la tecnología detrás de la banca digital.”',
-        time: '9:00 AM - 10:00 AM',
-        description: 'Pedro Camargo Gerente de Transformación y Desarrollo en Nequi',
-        duration: '1h',
+        title: 'Refrigerio',
+        time: '9:30 AM - 10:30 AM',
+        description: 'Todos los asistentes',
+        duration: '30min',
         place: 'Auditorio principal Camara de Comercio'
       },
       {
         id: 10,
-        title: 'Refrigerio',
-        time: '10:00 AM - 10:30 AM',
-        description: 'Todos los asistentes',
-        duration: '30min',
+        title: '“IBM”',
+        time: '10:30 AM - 11:30 AM',
+        description: '',
+        duration: '1h',
+        place: 'Auditorio principal Camara de Comercio'
+      },
+      {
+        id: 10.5,
+        title: '“Nequi, la tecnología detrás de la banca digital.”',
+        time: '',
+        description: 'Pedro Camargo Gerente de Transformación y Desarrollo en Nequi',
+        duration: '1h',
         place: 'Auditorio principal Camara de Comercio'
       },
       {
